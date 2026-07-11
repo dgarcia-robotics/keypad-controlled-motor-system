@@ -22,9 +22,20 @@ Keys 0–9 set a speed level mapped to PWM duty, `#` toggles start/pause, `A` re
 - **Modular structure:** input handling, motor drive, and LCD display are isolated into small single-purpose functions (`applyMotor`, `pwmFromLevel`, `toggleDir`), which made the logic easy to test and extend.
 - **Power discipline:** separate motor and logic supplies with shared ground — the same practice used to keep inductive noise off logic rails in real machines.
 
+## Schematic
+
+Sheet 1 — motor drive: L293D H-bridge, DC motor on separate 9 V rail, keypad matrix.
+
+![Schematic sheet 1 — motor drive and keypad](keypad-motor-controller_schematic_p1.png)
+
+Sheet 2 — operator display: 16x2 LCD with contrast pot on the shared 5 V logic rail.
+
+![Schematic sheet 2 — LCD display](keypad-motor-controller_schematic_p2.png)
+
 ## Files
 
 - `keypad_motor_controller.ino` — full commented source
+- `keypad-motor-controller_schematic_p1.png` / `_p2.png` — circuit schematic (Tinkercad, 2 sheets)
 
 ## Links
 
