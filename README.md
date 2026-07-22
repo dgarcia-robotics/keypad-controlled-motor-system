@@ -10,7 +10,7 @@ An operator control station for a DC motor: 4x4 matrix keypad input, L293D H-bri
 
 **Objective 1 — Design and complete robotic and embedded systems solutions that address real-world situations and challenges.**
 
-Industrial motor stations need speed selection, direction control, clear status feedback, and a stop that always works. This project implements that control pattern end to end on embedded hardware.
+**How it meets the objective:** It implements the control pattern real industrial machines use — speed selection, direction control, live status, and an emergency stop that always works — as a complete, working embedded system.
 
 ## How It Works
 
